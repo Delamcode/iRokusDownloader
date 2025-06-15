@@ -83,7 +83,7 @@ def main():
     if metadata["loginRequired"] == True:
         token = input("Token: ")
     # Generate page ranges and download images
-    for current_page in range(178, last_page):
+    for current_page in range(1, last_page):
         url = f"{base_url}{current_page}?token={token}"
         download_images_from_url(url, current_page)
 
